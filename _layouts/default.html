@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>{{ page.title }}</title>
+  <meta name="author" content="rubytester" />
+  <script type="text/javascript" src="http://use.typekit.com/lyb7bxb.js"></script>
+  <script type="text/javascript">try {Typekit.load();} catch(e) {}</script>
+  <link rel="alternate" title="rubytester" type="application/rss+xml"
+        href="http://feeds.feedburner.com/RubyTesterBlog" />
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+</head>
+<body>
+<div class="content">
+  <div id="header">
+    <div id="title"><a href="/">skim &raquo;</a></div>
+    <div id="misc">
+      <a href="http://feeds.feedburner.com/RubyTesterBlog">feed</a> &middot;
+      <a href="http://twitter.com/rubytester">twitter</a> &middot;
+      <a href="http://github.com/rubytester">github</a> &middot;
+    </div>
+  </div>
+</div>
+
+{{ content }}
+
+<div class="related">
+  <h3>all posts</h3>
+
+  <p>{% for post in site.posts %}
+
+  <div>{{ post.date | date: "%b %d, %Y" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></div>
+  {% endfor %}</p><br />
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5687005-5']);
+  _gaq.push(['_setDomainName', '.rubytester.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
