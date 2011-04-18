@@ -4,9 +4,9 @@ title: starting jekyll
 date: 2011-03-02 00:00:00 -08:00
 published: true
 categories:
-  -- jekyll
-  -- github
-  -- experiment
+  - jekyll
+  - github
+  - experiment
 ---
 
 ## my jekyll attempt
