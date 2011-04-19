@@ -4,7 +4,7 @@ date: 2009-09-13 16:03:35.593020 -05:00
 layout: post
 ---
 
-### Getting to know Vim. Nobody has ever told me how simple it is.
+## Getting to know Vim. Nobody has ever told me how simple it is.
 
 The first person I've ever met who uses vim was Charley Baker. He actually showed me Vim running on his Mac at AWTA2009 in Austin.
 It's funny that as a tester working with developers for many years I have never met anyone working with Vim
@@ -20,7 +20,7 @@ It's nice that vim is all about making 'you operate' on text, I mean really 'you
 I am just starting to learn. The two things to understand are config files `_vimrc`, `_gvimrc` and vimfiles on windows
 and for ubutntu the `.vim` dir and `.vimrc`, `.gvimrc` files. They are mostly the same. (FYI plenty of resources on github)
 
-#### Gvim on Windows
+## Gvim on Windows
 
 I downloaded Gvim on Windows and installed it into `c:\Programs\vim`.
 In Windows the `~` home dir is `%USERPROFILE%` so that's where I put my `_vimrc` and `_gvimrc`.
