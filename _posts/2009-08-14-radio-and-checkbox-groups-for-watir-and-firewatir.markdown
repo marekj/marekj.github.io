@@ -1,6 +1,5 @@
 --- 
 title:  Radio and Checkbox Groups for Watir and Firewatir
-date: 2009-08-14 15:18:31.109000 -05:00
 layout: post
 ---
 

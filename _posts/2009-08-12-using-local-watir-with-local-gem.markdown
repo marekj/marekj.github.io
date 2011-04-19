@@ -1,6 +1,5 @@
 --- 
 title: Using Local Watir Code from Git With Local Gem
-date: 2009-08-12 14:04:51.140000 -05:00
 layout: post
 ---
 

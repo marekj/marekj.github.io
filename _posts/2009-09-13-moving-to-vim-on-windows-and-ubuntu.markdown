@@ -1,6 +1,5 @@
 --- 
 title: Moving to GVim on Windows and Ubuntu
-date: 2009-09-13 16:03:35.593020 -05:00
 layout: post
 ---
 

@@ -1,6 +1,5 @@
 --- 
 title:      Research on Usecase and Userstories
-date: 2009-08-24 10:35:44.562000 -05:00
 layout: post
 ---
 

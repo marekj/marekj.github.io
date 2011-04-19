@@ -1,12 +1,8 @@
 --- 
 layout: post
 title: Deconstructing Rspec Runner
-date: 2009-04-24
-published: true
-categories:
-  - rspec
-  - watir
 --- 
+
 ## Moving from TestUnit runner to Rspec Runner for Watir Functional Tests
 
 For my Watir 'usecase' tests I have been running test/unit test cases with the `UI::Console::TestRunner.run` . 
