@@ -16,8 +16,8 @@ In a 'functional test' steps of execution sequence and timeline matter while in 
 In Functional tests I have to setup preconditions: load the browser and login. These 'steps' are tests as well in their own right but mostly they play a 'role' of 'flow setup' 
 for later tests hence they introduce dependency in 'functional testing'. This dependency rarely exist in Test Unit style testing, it is built to not care about 
 this kind of 'dependency setup' - as a matter of fact it rejects it, it does not run `test_xxx` methods sequentially by default but alphabetically 
-(this fact causes constant questions on "watir-general mailing list":http://groups.google.com/group/watir-general. 
-The workaround is to use "Watir::TestCase":http://wtr.rubyforge.org/rdoc/classes/Watir/TestCase.html that sorts them sequentially). 
+(this fact causes constant questions on [watir-general mailing list](http://groups.google.com/group/watir-general). 
+The workaround is to use [Watir::TestCase](http://wtr.rubyforge.org/rdoc/classes/Watir/TestCase.html) that sorts them sequentially. 
 
 ## How Test Unit runs tests
 
