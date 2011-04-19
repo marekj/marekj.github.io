@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Watir Semantic Shortcuts to Elements
-date: 2009-07-29 09:28:29.828000 -05:00
+date: 2009-07-29
 ---
 
 ## Accessing Watir elements with semantic shortcuts

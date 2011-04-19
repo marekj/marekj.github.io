@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Deconstructing Rspec Runner
-date: 2009-04-24 12:28:46.437000 -05:00
+date: 2009-04-24
 published: true
 categories:
   - rspec
@@ -49,12 +49,13 @@ Test::Unit::UI::Console::TestRunner.run MyTestCase
 # get the testcase2 code and run it with TestRunner.run
 require 'my_testcase2'
 Test::Unit::UI::Console::TestRunner.run MyTestCase2
+
 {% endhighlight %}
 
 or when I run a 'usecase scenario' I feed tests into 'timeline' like so
 
 {% highlight ruby %}
-@test_list = %w[MyTestCase MyTestCase2 MyTestCase3]
+@test_list = ["MyTestCase", "MyTestCase2", "MyTestCase3"]
 def run_test(test_number)
   TestRunner.run @test_list[test_number].constantize
 end
@@ -62,11 +63,11 @@ end
 run_test 0
 # setup context for test 2
 run_test 1
+
 {% endhighlight %}
 
 This code organization ensures the 'when' Test::Unit will run and 'when' it finishes. 
 Now I can control the flow of test setups and I can use testcases as 'roles' to play some part in moving context forward in timeline of step sequence to run yet more tests.
-
 
 ## Replacing TestUnit TestCase with Rspec ExampleGroup
 
@@ -118,3 +119,4 @@ With rspec is it any reason to even have code outside of it? Maybe I need to ret
 
 I started writing this post thinking that I need to find an equivalent to TestRunner.run TestCase mechanism 
 but now I am thinking maybe rspec itself is just it and there is no need to run outside of it.
+
