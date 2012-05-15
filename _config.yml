@@ -2,5 +2,4 @@ permalink:  /:year/:month/:day/:title
 auto: true
 server: true
 pygments: true
-lsi: true
 markdown: rdiscount
