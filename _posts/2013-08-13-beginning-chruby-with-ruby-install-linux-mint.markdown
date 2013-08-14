@@ -31,7 +31,7 @@ I am using Linux Mint 13 (Maya), based on Ubuntu Precise. The machine does not h
 
 Aha, this may fail for you becuase your system you don't have other tools needed to build ruby. (enough with system jokes)...
 
-OK, run this to get the tools for building ruby (or you could use `ruby-install` which handles those dependencies for you! Yeah for `ruby-install`):
+OK, run this to get the tools for building ruby (or you could use `ruby-install` which handles those dependencies for you! Yeah for `ruby-install` talking to apt-get):
 
     sudo apt-get install build-essential zlib1g-dev libyaml-dev libssl-dev libgdbm-dev libreadline-dev libncurses5-dev libffi-dev
     # and build that ruby
@@ -52,7 +52,7 @@ So let's get some more rubies installed (at this point reader may ask again: why
 
 ### install chruby
 
-What is `chruby`? It's a tool for switching ruby interpreters installed on your machine. How do you install `chruby`?. Read this https://github.com/postmodern/chruby#install.
+What is `chruby`? It's a tool for switching ruby interpreters installed on your machine. How do you install `chruby`?. [Read this](https://github.com/postmodern/chruby#install).
 
 - You download it,
 - unpack it
@@ -69,7 +69,7 @@ Well. We need rubies installed but we don't have any. We only have `system` ruby
 
 ### install ruby-install
 
-What is `ruby-install`? It's a tool for installing rubies on your system. How do you install `ruby-install`? Read this: https://github.com/postmodern/ruby-install#install - It's the same process as installing `chruby`. It installs itself in `/usr/local/share/ruby-install`.
+What is `ruby-install`? It's a tool for installing rubies on your system. How do you install `ruby-install`? [Read this](https://github.com/postmodern/ruby-install#install) - It's the same process as installing `chruby`. It installs itself in `/usr/local/share/ruby-install`.
 
 After installing `ruby-install` run the following command `ruby-install` to see what known version of rubies you can install with it.
 
@@ -86,7 +86,7 @@ If you are not sure which one and not sure what you should do select the second 
 
 Now go get coffee since this will take few minutes
 
-> Kudos to `ruby-install` for ensuring you have all the libs needed to for compiling ruby on your machine. That's a great feature. So if you didn't bother installing ruby with apt-get and let's say don't have build-essentials package then `ruby-install` will handle that for you. Aha, that's what I'm talking about.
+> Kudos to `ruby-install` for ensuring you have all the libs needed to for compiling ruby on your machine. That's a great feature. So if you didn't bother installing ruby with apt-get and let's say don't have build-essential package then `ruby-install` will handle that for you. Aha, that's what I'm talking about.
 
 ### Configure chruby for your shell (your login shell)
 
