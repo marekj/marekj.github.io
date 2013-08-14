@@ -1,5 +1,3 @@
 permalink:  /:year/:month/:day/:title
-auto: true
-server: true
 pygments: true
 markdown: redcarpet
