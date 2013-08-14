@@ -96,6 +96,8 @@ And in your ~/.profile is what we need to enable chruby in your shell. by defaul
 
 #### enable chruby for all login shells
 
+I told you that `chruby` installs two files `chruby.sh` and `auto.sh`. We now want to deal with the first one. `auto.sh` will be mentioned later.
+
 Switch to be root with `su -lp` (or just sudo -s). you will be asked for password.
 Now run the following commands:
 
@@ -117,6 +119,89 @@ If you want to set an default ruby with every login, add it to your ~/.profile
     echo "chruby 2.0" >> ~/.profile
 
 Everytime you open a terminal and start a new session you will have ruby 2.0 as your ruby interpreter.
+
+## enable auto switching per project
+
+Now we can talk about that second file `auto.sh`. With this file `chruby` reads `.ruby-version` file located in current directory and automatically invokes the correct ruby interpreter. You don't have to manually `chruby` nothing at this point. `auto.sh` using `.ruby-version` does the work for you.
+
+So, again switch to be root with `su -lp` (or just sudo -s). you will be asked for password.
+Now run the following commands:
+
+      # append auto.sh sourcing to previously created chruby
+      echo "source /usr/local/share/chruby/auto.sh" >> /etc/profile.d/chruby.sh
+
+      # leave root session and return to your user session
+      exit
+
+To test it it's best to have 3 rubies installed.
+- `system` ruby 1.9.3p0,
+- and two rubies installed with `ruby-installer`
+-- 1.9.3p448
+-- and 2.0.0p247
+
+Open your terminal and run some tests:
+
+    ruby -v
+    # you should see 2.0.0p247 if you ~/.profile has the line `chruby 2.0` as we set earlier
+
+    chruby
+    # this should output 2 entries
+
+      ruby-1.9.3-p448
+    * ruby-2.0.0-p247
+
+    # notice the * indicates the current ruby interpreter selected as was shown by ruby -v
+
+    ruby system
+    # we now disengage chruby (warp engines offline at this point)
+
+    ruby -v
+    # you shoudl see 1.9.3p0 comign from your system (you know the one installed with apt-get)
+
+    chruby
+      ruby-1.9.3-p448
+      ruby-2.0.0-p247
+
+    # notice there is no * by any entry here (chruby is offline)
+
+    # now switch to 1.9
+    chruby 1.9
+
+    chruby
+    * ruby-1.9.3-p448
+      ruby-2.0.0-p247
+
+    # the * should be by 1.9.3
+
+    ruby -v
+    # you should see 1.9.3p448 now as your ruby
+
+So now create a test directory where we can demonstrate auto switching behavior.
+
+    mkdir ~/chrubytester
+    cd chrubytester
+    echo "ruby-2.0.0-p247" > .ruby-version
+
+And let's demonstrate shall we?
+
+    ruby -v
+    # surprise. now now you see 2.0.0p247. chruby used .ruby-version to switch itself
+
+
+A word of WARNING at this time if you switch back to your home dir you will end up with system ruby and now with what you started previously.
+
+    cd
+    ruby -v
+    # should report now a system ruby 1.9.3p0
+    # run this:
+    chruby
+    # and you should see the entries but no * by any of them
+      ruby-1.9.3-p448
+      ruby-2.0.0-p247
+
+What happened? The .ruby-version entry ensures the ruby version for that dir only. Outside of it chruby engines are offline. You need to manually engage them back with chruby 2.0 for example.
+
+It all makes sense now, yes? (if not I can't help you)
 
 ## Conclusion
 
