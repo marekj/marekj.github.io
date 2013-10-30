@@ -139,5 +139,46 @@ Each window you can split into 'panes'.
 `C-b ?` shows 44 bind-key entries. q quits the view and returns to window.
 
 
-### To Be continued.
+## Update Tmux Kata Day 2
 
+And we are swithing all around a bit. Some changes.
+
+
+### tmux.conf file
+
+I created `~/.tmux.conf` file based on reading tmux book
+
+- PREFIX set to C-a
+
+I have abandoned the default `C-b`. I have switched to `C-a` and I've been training my fingers to do that today.
+
+My setting for PREFIX is this in `~/.tmux.conf`
+
+```
+# PREFIX
+unbind C-b
+set -g prefix 'C-a'
+bind 'C-a' send-prefix
+```
+
+I am leaving C-b alone for working in commandline to move back one char (emacs default mode).
+
+- mouse off
+
+Next I turned mouse off with `set -g mode-mouse off`. Let's see how this goes.
+
+- Split Panes
+
+I don't like recommended way of splitting panes `C-a |` with `bind | split-window -h`. This requires to use Shift key. I chose `bind /' instead and may revert if I find conflicts.
+
+### Kata: study ls-pair (20 min)
+
+Studied [ls-pair projec](https://github.com/livingsocial/ls-pair). Will need to install hamachi and learn wemux a bit.
+
+Done.
+
+### Kata: read about Tmuxinator (15 min)
+
+`gem install tmuxinator`. Tmuxinator allows you to setup configuations for sessions, how many windows, what is loade in windows. How to prepare windows and panes. sounds like a nice configurator.
+
+Done.
