@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setup tmux pair user
+title: Setup tmux remote pair user
 ---
 
 [This LivingSocial remote pairing project ls-pair](https://github.com/livingsocial/ls-pair) seems like a good place to start setting up machines for remote pair programming.
@@ -41,17 +41,24 @@ As a user `tmuxpair` in wemux session I am in a pair mode. When I type `whoami` 
 `wemux users` shows me two users: rubytester and tmuxpair
 
 
-# Iternation 1: connecting from another machine.
+# Iternation 1: Allowing ssh from the outside.
 
-I can connect from another machine on my local network or on hamachi network.
+Next I want to connect from outside of my machine. Let's look at hamachi, ngrok and localtunnel gem.
 
 ## Hamachi
 
-Install hamachi `brew cask install hamachi`. Open the installer app to install hamachi. After hamachi installed I started it and joined with my rubytester network account.
+Install hamachi `brew cask install hamachi`. Open the installer app to install hamachi. After hamachi installed I started it and created ad hoc network named tmuxpair.
 
 OK, VPN client running.
 
+## ngrok
+
+In order to use ngrok ssh tunnel I need to [sign up for new account on ngrok.com](http://ngrok.com/). If I end up liking it I should pay for it. I just found out about it thanks to [the post about pairing from @samuelgoodwin](http://samuelgoodwin.tumblr.com/post/64769827818/how-to-get-started-with-remote-pairing-quickly)
+
+After signing up I got an auth token. Downloaded ngrok.zip, unziped to `~/bin/ngrok` and started the tunnel with: `ngrok --authtoken <mytoken> -proto=tcp 22` - ngrok gave me a tcp forward connection on grok.com and 5 digit port number, for example: ngrok.com:12345
+
+Just as before when I tested with tmuxpair I cd to ls-pair directory and connect to my machine using ngrok's tunnel. `ssh tmuxpair@ngrok -p 12345 -i public_keys/tmuxpair` and I am prompted for tmuxpair passphrase.
+
+After connecting I `wemux pair` and I am connected to the tmux session as before.
+
 Done.
-
-
-
