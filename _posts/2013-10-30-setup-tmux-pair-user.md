@@ -40,4 +40,18 @@ As a user `tmuxpair` in wemux session I am in a pair mode. When I type `whoami` 
 
 `wemux users` shows me two users: rubytester and tmuxpair
 
-To be contiued...
+
+# Iternation 1: connecting from another machine.
+
+I can connect from another machine on my local network or on hamachi network.
+
+## Hamachi
+
+Install hamachi `brew cask install hamachi`. Open the installer app to install hamachi. After hamachi installed I started it and joined with my rubytester network account.
+
+OK, VPN client running.
+
+Done.
+
+
+
