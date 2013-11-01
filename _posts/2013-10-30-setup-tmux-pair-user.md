@@ -41,7 +41,7 @@ As a user `tmuxpair` in wemux session I am in a pair mode. When I type `whoami` 
 `wemux users` shows me two users: rubytester and tmuxpair
 
 
-# Iternation 1: Allowing ssh from the outside.
+# Iteration 1: Allowing ssh from the outside.
 
 Next I want to connect from outside of my machine. Let's look at hamachi, ngrok and localtunnel gem.
 
@@ -67,3 +67,10 @@ After connecting I `wemux pair` and I am connected to the tmux session as before
 
 Done.
 
+## localtunnel gem
+
+Oops. Looks like [localtunnel](http://progrium.com/localtunnel/) [service has been down for a while](https://github.com/progrium/localtunnel/issues/116). And I am not sure if you can share port 22 on it.
+
+## Some conclusion.
+
+I have spent overall about 12 hours researching tmux, wemux and setting up remote pairing on my local machines with hamachi and ngrok. This has been a time well spent. For voice I can use FaceTime, or Google hangouts. Let's see how this goes.
