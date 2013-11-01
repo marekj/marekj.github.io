@@ -47,9 +47,13 @@ Next I want to connect from outside of my machine. Let's look at hamachi, ngrok 
 
 ## Hamachi
 
-Install hamachi `brew cask install hamachi`. Open the installer app to install hamachi. After hamachi installed I started it and created ad hoc network named tmuxpair.
+Install hamachi `brew cask install hamachi`. Open the installer app to install hamachi. After starting I named hamachi client with my machine name and created ad hoc network named tmuxpair.
 
-OK, VPN client running.
+On my linux box I [installed hamachi and haguichi as described in ubuntu help.](https://help.ubuntu.com/community/Hamachi). Started haguichi, named client with machine name and joined network named tmuxpair (here you will need to provide your pair with a password for the network, I also think hamachi allows to somehow accept clients wihout passwords but I need to check it)
+
+OK, VPN client running on both machines. On my mac I can see the other machine joined and on my linux box I seen see my mac's IP provided by hamachi. I will use that to ssh to the machine as tmuxpair user but first I need to provide my linux machine private key for tmuxpair user `ssh tmuxpair@XX.XX.XX.XX` and once there I `wemux pair`.
+
+Done.
 
 ## ngrok
 
@@ -62,3 +66,4 @@ Just as before when I tested with tmuxpair I cd to ls-pair directory and connect
 After connecting I `wemux pair` and I am connected to the tmux session as before.
 
 Done.
+
