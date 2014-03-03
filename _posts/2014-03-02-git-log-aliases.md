@@ -24,7 +24,7 @@ I don't like to type `git` commmand so I have an have `alias g="git"` in my prof
 
 How do I use those 4 log views?. Here is brief demo and my reasons for their constructions.
 
-![Animated Gif of git log aliases in action](/images/git-log-alias-rubytester.jpg)
+![Animated Gif of git log aliases in action](/images/git-log-alias-rubytester.gif)
 
 ### `g l` for `git log --stat --abbrev-commit --pretty=oneline --graph -t  --cc`
 
