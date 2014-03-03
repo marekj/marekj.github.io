@@ -21,7 +21,7 @@ I alos have `alias g="git"` so in terminal I just type `g h` for a quick look ra
 
 How do I use those 4 log aliases?. Here is brief demo and my usage of it.
 
-![Animated Gif of git log aliases in action](/images/git-log-aliases-rubytester.jpg)
+![Animated Gif of git log aliases in action](/images/git-log-alias-rubytester.jpg)
 
 ### g l
 
