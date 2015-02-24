@@ -7,6 +7,8 @@ I find official Rubik's cube move notation confusing. I get lost with algorithms
 
 I tried to map the moves to some visual vocabulary that makes sense to me, I needed a visual scaffolding system to learn how to solve the Rubik's cube. I came up with heuristic moves base on manipulating everyday objects. It took me few days of practice and I can now solve the cube in about 2 minutes. I don't need to think of those moves any more, it has become muscle memory at this point but I think for a novice there has to be a better way than the official one letter designation for a move. It simply sucks unless you have huge determination. I hope that this visual vivid vocabulary can help you too.
 
+I presented this way of solving Rubik's cube at [Test Automation Bazaar 2015 in Austin, TX](http://watir.com/2014/12/16/announcing-test-automation-bazaar-jan-16-17-in-austin/)
+
 ### Cognitive Ease Matters
 
 I wanted to come up with sequence notation based on cogntive ease of learning in the presence of disorientation. I converted each official move into a huristic based on moving everyday objects and composed the moves into stanzas; two or three moves per line.
@@ -227,7 +229,5 @@ Hand Position 1: When one of the edges is in correct position then realign the c
 Notice you may need to repeat this sequence 2 or 3 times to correctly rotate the edge pieces to their respective locations.
 
 ### Solved:
-
-I presented this way of solving Rubik's cube at [Test Automation Bazaar 2015 in Austin, TX](http://watir.com/2014/12/16/announcing-test-automation-bazaar-jan-16-17-in-austin/)
 
 Major weakness in this post: some visual drawings would be nice but I don't have time. Some youtube videos would be nice but I don't have time for that. Print out the ShengShou solution and follow along. Let me know if this helps.
