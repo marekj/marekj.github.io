@@ -52,6 +52,7 @@ h1,h2,h3,h4{
   font-family: 'Lobster Two', cursive;
   font-weight: normal;
   line-height: 1.7em;
+  margin-top: 2em;
 }
 h1 a, h2 a, h3 a, h4 a{
   color: #3B3A40;
