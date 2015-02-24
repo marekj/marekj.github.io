@@ -1,10 +1,10 @@
 .highlight {
   color: #FAF9F8;
-  background-color: #333333; 
-  font-size: 13px;
-  padding: 10px 5px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  background-color: #333333;
+  font-size: 1em;
+  padding: 1em 2em;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
   overflow: hidden;
   text-shadow: none;
   line-height: 1.25em;

@@ -3,7 +3,7 @@ layout: post
 title: Learn Rubik's Cube with rubytester's heuristic move notation
 ---
 
-I find official Rubik's cube move notation confusing. I get lost with algorithms like U R U' R' U' F' U F. The congitive load is a bit too heavy for me.
+I find official Rubik's cube move notation confusing. I get lost with algorithms like `U R U' R' U' F' U F`. The congitive load is a bit too heavy for me.
 
 I tried to map the move to some visual vocabulary that makes sense to me, I needed a visual scaffolding system to learn how to solve the Rubik's cube. I came up with heuristic moves base on manipulating everyday objects. It took me few days of practice and I can now solve the cube in about 2 minutes. I don't need to think of those moves any more, it has become muscle memory at this point but I think for a novice there has to be a better way than the official one letter designation for a move. It simply sucks unless you have huge determination. I hope that this visual vivid vocabulary can help you too.
 
