@@ -5,33 +5,40 @@ title: Learn Rubik's Cube with rubytester's heuristic move notation
 
 I find official Rubik's cube move notation confusing. I get lost with algorithms like `U R U' R' U' F' U F`. The congitive load is a bit too heavy for me.
 
-I tried to map the move to some visual vocabulary that makes sense to me, I needed a visual scaffolding system to learn how to solve the Rubik's cube. I came up with heuristic moves base on manipulating everyday objects. It took me few days of practice and I can now solve the cube in about 2 minutes. I don't need to think of those moves any more, it has become muscle memory at this point but I think for a novice there has to be a better way than the official one letter designation for a move. It simply sucks unless you have huge determination. I hope that this visual vivid vocabulary can help you too.
+I tried to map the moves to some visual vocabulary that makes sense to me, I needed a visual scaffolding system to learn how to solve the Rubik's cube. I came up with heuristic moves base on manipulating everyday objects. It took me few days of practice and I can now solve the cube in about 2 minutes. I don't need to think of those moves any more, it has become muscle memory at this point but I think for a novice there has to be a better way than the official one letter designation for a move. It simply sucks unless you have huge determination. I hope that this visual vivid vocabulary can help you too.
+
+### Cognitive Ease Matters
 
 I wanted to come up with sequence notation based on cogntive ease of learning in the presence of disorientation. I converted each official move into a huristic based on moving everyday objects and composed the moves into stanzas; two or three moves per line.
 
-Compare the cognitive ease with which your mind consumes 4 stanza of two moves each like a chant:
+Compare the 3 representations of sequence to follow in order to solve one stage of a cube:
+
+The 8 move official notation in one freaking line::
+
+    U' F' U F U R U' R'
+
+The raw mapping to heuristc moves (a bit more human readable):
+
+    open past close future close drop open lift
+
+And the composition that breaks the linear sequence into stanzas:
 
     open past
     close future
     close drop
     open lift
 
-With the 8 move linear sequence mapping:
+I hope you can experience the cognitive ease with which your mind consumes 4 stanzas of two moves each. Imaging speakint it out loud like a chant.
 
-    open past close future close drop open lift
+My argument for developing these moves is that congnitive ease matters when learning in the presence of disorientation and I wanted to test my assumption that I can learn anything if the learning is designed as a systematic skill aquisition in the presence of disorientation. I guarantee you will be able to quickly learn to solve the rubik's cube this way. As a kid I never learned to solve Rubik's Cube. As an adult I was frustrated but a couple of months ago I decided to confront the Myth of the Impossible and approach it in a new way. So hang out with your Initial Disorientation and have luck learning.
 
-With the official notation in one freaking line::
+## Working with Official Instructions
 
-    U' F' U F U R U' R'
+I used the initial instructions that came with the cube I bought from ShengShou: [I scanned them for you here](https://www.dropbox.com/s/lpfmzd4aof18ryk/rubik_china.pdf?dl=0). You should print out these 2 pages of instructions and follow along. Print in Color. If you don't have a color printer just follow along on your screen.
 
-Congnitive ease matters when learning in the presence of disorientation.
+I find the ShengShou instructions simpler than the [official solution guide (pdf)](http://rubiks.com/uploads/general_content/Rubiks_cube_3x3_solution-en.pdf). ShengShou instructions never use the L side nor the D side of the cube. That's 2 sides out of 6 you don't have to worry about.
 
-
-## Working with instructions
-
-I used the initial instructions that came with the cube I bought from ShengShou: [I scanned them for you here](https://www.dropbox.com/s/lpfmzd4aof18ryk/rubik_china.pdf?dl=0). You should print out these 2 pages of instructions and follow along. Print in Color. If you don't have a color printer just follow along on your screen. (There are also official instructions but I find the ShengShou instructions simpler and better).
-
-Notice the instructions use the official notation. I am a bit too lazy to make a video or an instruction cheet sheet (maybe later) but for now I'll try to capture what worked for me.
+Notice the instructions use the official notation. I am too lazy to make a video or an instruction cheet sheet (maybe later) but for now I'll try to capture what worked for me in words while you examine the printouts.
 
 Before you proceed remember the most important thing to remember in all the move is: What Color is your Face... you will see what I mean when you read instructions.
 
@@ -47,15 +54,15 @@ Your Face has a color, it's the color of the middle piece under your left thumb 
 
 All the the moves are performed in the context of your FACE color. What Color is your Face will be the prominent way of orienting yourself when making sequence moves.
 
-You make all moves with your right hand (left hand's fingers assisting in the move). Each side you move in clockwise or counterclockwise direction. Clockwise being the Future on the clock and Counterclockwise moving time back into the Past. In position 1 you move U and R sides (4 moves)
+You make all the moves with your right hand (left hand's fingers assisting in the move). Each side moves clockwise or counterclockwise direction. Clockwise being the Future on the clock and Counterclockwise moving time back into the Past. In position 1 you move U and R sides (4 moves)
 
 Hand Position 1+ (Pinky version): While in Position 1 your left index finger is resting on on top U and your pinky holding the D side.
 
-This allows you to let go of your thumb so you can move (F)ace side with your right hand (while cube rests its D side on pinky finger). In this position you move F side (2 moves)
+This allows you to let go of your thumb so you can move (F)ace side with your right hand (while cube rests its D side on your left pinky finger). In this position you move F side (2 moves)
 
 Hand Position 2: Hold the cube in your left hand like before but this time the thumb is on the bottom side (D) and ring finger on the top side (U).
 
-Hold it like you are examining a gold coin. This position allows you to freely move (F)ront side and (B)ack side with your right hand without the help of index/pinky finger support. In this position 2 you move F, B and R sides (6 moves). This position is used in one algorithm only in Stage 6.
+Hold it like you are examining a gold coin. This position allows you to freely move (F)ront side and (B)ack side with your right hand without the help of index/pinky finger support. In this position 2 you move F, B and R sides (6 moves). This position is used in one sequence in Stage 6.
 
 ## Cube's Side heuristc mapping:
 
@@ -90,6 +97,10 @@ That's all the 8 moves needed to construct sequences to solve the cube. I don't 
 
 ## SEQUENCES: Algorithms for solving the Cube
 
+There are 7 stages to solving the cube. You complete each stage at a time. Each stage gives you one or more sequences to complete. Sequences are the stanza based moves that incorporate the names of moves. The move names automatically imply which side you move. Some stanzas are two or three moves. The reason is to combine similary hand movements into a short mini gesteure sequence. Some stanzas have an empty line between them. This is a place for you to breathe before performing the next mini gesture sequence.
+
+As you move the side speak the move name out loud. Combine one or two moves into a stanza and speak the stanzas out loud like a chant as your hand perofrms the move. Treat the names organized into stanzas as a scaffolding you erect around building a skill. You begin with scaffolding which helps you build a skill. As the skill becomes solid you discard the scaffolding.
+
 ### Stage 1: Solve the White Cross
 
 Position: Hold cube in Position 1. The instructions tell you what White side is Down (and Yellow is UP).
@@ -98,7 +109,11 @@ I practiced with White side UP. (at the same time Yellow side is Down). Your fac
 
 This part is pure struggle. The official guide simply states: "You should be able to do this by yourself without needing algorithms" but that gets people stuck. If you can struggle and accomplish this you will learn a great deal about how the cube moves work in 3D.
 
-Hints: You need to find 4 edge pieces White and other 4 colors (There is No White/Yellow edge piece of course). When you find the piece anywhere you should have 2 to 3 moves to move it to its proper location. Think in 3D. Experiment. Struggle.
+Hints:
+- You need to find 4 edge pieces White and other 4 colors (There is No White/Yellow edge piece of course).
+- When you find the piece anywhere you should have 2 to 3 moves to move it to its proper location.
+- Think in 3D. Experiment. Struggle.
+- Think "if the piece needs to move from here to there then where does it need to be first"
 
 ### Stage 2: Solve the White Corners
 
@@ -112,23 +127,27 @@ official:
 
 my preffered version:
 
-    close drop open lift
+    close drop
+    open lift
 
 Why my preffered version? I make one extra move but my hand is in position 1. In official version I find my had to be in postion 1+ pinky and my fingers ran into each other. One extra move solve the uncomfortable way of holding the cube.
 
 When: White on R side and Face color on F side (with U color matching middle cube on R)
 
-    drop close lift
+    drop close
+    lift
 
 When: White on U side (with R side matching F and F side matching R)
 
 => You need to reposition to White on R side position first
 
-    drop close close lift open
+    drop close close
+    lift open
 
 => Followed by:
 
-    drop close lift
+    drop close
+    lift
 
 ### Stage 3: Solve the Middle layer
 
@@ -175,8 +194,8 @@ There are 3 starting positions:
 
     drop close
     lift close
-    drop close
-    close lift
+    drop close close
+    lift
 
 Notice you may need to repeat this sequence 2 or 3 times with each times repositioning top layer to match the starting positions
 
@@ -188,8 +207,10 @@ Hand Position 2: Hold the cube in Position 2 with correctly placed corners facin
 
     drop loosen drop
     future future
+
     lift tighten drop
     future future
+
     lift lift
 
 ### Stage 7: Position Yellow Edges:
@@ -199,6 +220,7 @@ Hand Position 1: When one of the edges is in correct position then realign the c
     drop open
     drop close drop close
     drop open
+
     lift open
     lift lift
 
