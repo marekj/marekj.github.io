@@ -1,6 +1,6 @@
 permalink:  /:year/:month/:day/:title
-highlighter: pygments
-markdown: redcarpet
+highlighter: rouge
+markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
