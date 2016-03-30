@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes to self: First steps with Postgresql on Mac OS X
+title: First steps with Postgresql on Mac OS X
 ---
 
 First steps with postgres on Mac OS X. Prototyping with Sequel ruby gem. Accessing remote postgres example
