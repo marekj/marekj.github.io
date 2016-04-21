@@ -104,7 +104,7 @@ This would be a good time to patiently [read the example code presented in 'HC_S
 
 I made minor changes to simlify and make it show up in the cloud. We gonna publish the readings every 10 seconds to the cloud. The original code exposes the `cm` and `inches` variables but you have to query the device to get their values. Oh no no my dear friend, we be cloud publishing now.
 
-OK, save the app, Verify that it compiles. It does? Good. Flash it and [open the dashboard logs page to watch some action](https://dashboard.particle.io/)
+OK, save the app, Verify that it compiles. It does? Good. Flash it and [open the dashboard logs page to watch some action](https://dashboard.particle.io/user/logs)
 
 
 Your photon should get this code and start sending sensor data to the cloud visible in the logs page
