@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learn Rubik's Cube with rubytester's heuristic move notation
+title: Learn Rubik's Cube with heuristic move notation
 ---
 
 I find official Rubik's cube move notation confusing. I get lost with algorithms like `U R U' R' U' F' U F`. The congitive load is a bit too heavy for me.

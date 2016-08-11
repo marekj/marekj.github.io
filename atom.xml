@@ -4,13 +4,13 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>rubytester</title>
- <link href="http://rubytester.com/atom.xml" rel="self"/>
- <link href="http://rubytester.com/"/>
+ <title>marekj</title>
+ <link href="http://marekj.github.io/atom.xml" rel="self"/>
+ <link href="http://marekj.github.io/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://rubytester.com/</id>
+ <id>http://marekj.github.io/</id>
  <author>
-   <name>rubytester</name>
+   <name>marekj</name>
  </author>
  
  {% for post in site.posts limit:100 %}
@@ -19,9 +19,9 @@ layout: nil
    {% for category in post.categories %}
    <category term="{{category}}" />
    {% endfor %}
-   <link href="http://rubytester.com{{ post.url }}"/>
+   <link href="http://marekj.github.io{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://rubytester.com{{ post.id }}</id>
+   <id>http://marekj.github.io{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

@@ -6,7 +6,7 @@ layout: post
 ## Presentation at Seconf WatirDay
 
 
-<div style="width:425px" id="__ss_7502787"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/testrus/domain-specific-watir-page-objects" title="Domain Specific Watir Page Objects" target="_blank">Domain Specific Watir Page Objects</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/7502787" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/testrus" target="_blank">rubytester (testrus)</a> </div> </div>
+<div style="width:425px" id="__ss_7502787"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/testrus/domain-specific-watir-page-objects" title="Domain Specific Watir Page Objects" target="_blank">Domain Specific Watir Page Objects</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/7502787" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/testrus" target="_blank">testrus</a> </div> </div>
 
 
 ## Domain Specific Watir Page Objects 

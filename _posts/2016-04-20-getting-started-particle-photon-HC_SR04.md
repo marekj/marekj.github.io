@@ -40,7 +40,7 @@ The following uses HC_SR04 range sensor. [Google it, get it cheap on eBay](https
 
 And finally a HC_SR04 sensor to connect to Photon:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Getting HC_SR04 working on particle photon. I want to add distance sensor to nodebot car <a href="https://t.co/2kDHySNvt3">pic.twitter.com/2kDHySNvt3</a></p>&mdash; яuвyтеsтеr (@rubytester) <a href="https://twitter.com/rubytester/status/719317099567407109">April 11, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Getting HC_SR04 working on particle photon. I want to add distance sensor to nodebot car <a href="https://t.co/2kDHySNvt3">pic.twitter.com/2kDHySNvt3</a></p>&mdash; @_marekj <a href="https://twitter.com/_marekj/status/719317099567407109">April 11, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Things to do with hardware:
